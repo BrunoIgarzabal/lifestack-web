@@ -10,13 +10,7 @@ import { getPost, getPosts } from "@/lib/data"
 import { Separator } from "@workspace/ui/components/separator"
 import { calculateReadTime, formatDate } from "@workspace/ui/lib/utils"
 
-interface PostPageProps {
-  params: {
-    id: string
-  }
-}
-
-export default function PostPage({ params }: PostPageProps) {
+export default function PostPage({ params }: any) {
   const post = getPost(params.id)
   const allPosts = getPosts()
 
